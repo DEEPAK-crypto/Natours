@@ -22,6 +22,8 @@
 		@include respond(phone) {
 			top: 3rem;
 			right: 3rem;
+			height: 5rem;
+			width: 5rem;
 		}
 	}
 	&__background {
@@ -41,6 +43,8 @@
 		@include respond(phone) {
 			top: 3.5rem;
 			right: 3.5rem;
+			height: 4rem;
+			width: 4rem;
 		}
 	}
 	&__nav {
@@ -106,6 +110,9 @@
 	&__icon {
 		position: relative;
 		margin-top: 3.5rem;
+		@include respond(phone) {
+			margin-top: 2.5rem;
+		}
 
 		&,
 		&::before,
@@ -114,6 +121,9 @@
 			height: 2px;
 			background-color: $color-grey-dark-3;
 			display: inline-block;
+			@include respond(phone) {
+				width: 2.3rem;
+			}
 		}
 
 		&::before,
@@ -125,16 +135,28 @@
 		}
 		&::before {
 			top: -.8rem;
+			@include respond(phone) {
+				top: -.6rem;
+			}
 		}
 		&::after {
 			top: .8rem;
+			@include respond(phone) {
+				top: .6rem;
+			}
 		}
 	}
 	&__button:hover &__icon:before {
 		top: -1rem;
+		@include respond(phone) {
+			top: -.8rem;
+		}
 	}
 	&__button:hover &__icon:after {
 		top: 1rem;
+		@include respond(phone) {
+			top: .8rem;
+		}
 	}
 	&__checkbox:checked + &__button &__icon {
 		background-color: transparent;
