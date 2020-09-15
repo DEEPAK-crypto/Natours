@@ -1,4 +1,4 @@
 # Natours
-Homepage of an imaginary site using CSS
+Landing page using modern CSS techniques
 
 https://deepak-crypto.github.io/Natours/
